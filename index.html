@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Css/index.css">
     <title>Social Media Site</title>
 </head>
+
 <body>
     <nav>
         <div class="container">
@@ -16,7 +18,7 @@
             </h2>
 
             <div class="search-bar">
-                <i class="uil uil-search"></i> 
+                <i class="uil uil-search"></i>
                 <input type="search" placeholder="Search for creators, inspirations and projects">
             </div>
 
@@ -28,5 +30,137 @@
             </div>
         </div>
     </nav>
+
+    <!-- MAIN SECTION -->
+
+    <main>
+        <div class="container">
+
+            <!-- LEFT SECTION -->
+
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="Images/profile.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Chris Hemsworth</h4>
+                        <p class="text-muted">
+                            @chrishems
+                        </p>
+                    </div>
+                </a>
+
+                <!-- SideBar -->
+
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+
+                    <a class="menu-item" id="notification">
+                        <span><i class="uil uil-bell"><small class="notifications-count">9+</small></i></span>
+                        <h3>Notifications</h3>
+
+                        <!-- NOTIFICATION PopUp -->
+
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="Images/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Emily VanCamp</b> accepted your friend request.
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="Images/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Hussien</b> has requested to follow you.
+                                    <small class="text-muted">10s Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="Images/profile-6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Taylor Swift</b> commented on your photo.
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="Images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Tom Hardy</b> liked your photo.
+                                    <small class="text-muted">few seconds ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="Images/profile.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ashish</b> accepted your friend request.
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="menu-item" id="message-notification">
+                        <span><i class="uil uil-message"><small class="notifications-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i class="uil uil-analytics"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- End Of SideBar -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+            </div>
+
+            <!-- END OF LEFT SECTION -->
+            
+            <div class="middle">
+
+            </div>
+
+            <div class="right">
+
+            </div>
+
+        </div>
+    </main>
 </body>
+
 </html>
