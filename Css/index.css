@@ -313,3 +313,168 @@ position: relative;
 {
     display: block;
 }
+
+/* MIDDLE */
+
+/* ==============Stories Styling============== */
+
+.middle .stories
+{
+    display: flex;
+    height: 12rem;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.middle .stories .story
+{
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    background: rgb(119, 233, 233);
+    position: relative;
+    overflow: hidden;
+}
+
+.middle .stories .story:nth-child(1)
+{
+    background: url("/Images/stories\ \(4\).jpg") no-repeat center center/cover;
+}
+
+.middle .stories .story:nth-child(2)
+{
+    background: url("/Images/stories\ \(2\).jpg") no-repeat center center/cover;
+}
+
+.middle .stories .story:nth-child(3)
+{
+    background: url("/Images/stories\ \(3\).jpg") no-repeat center center/cover;
+}
+
+.middle .stories .story:nth-child(4)
+{
+    background: url("/Images/stories\ \(6\).jpg") no-repeat center center/cover;
+}
+
+.middle .stories .story::before
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.middle .stories .story .name
+{
+    z-index: 2;
+    font-weight: bold;
+}
+
+.middle .stories .profile-picture
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: flex-start;
+    border: 3px solid black;
+}
+
+/* =============Create Post Section============ */
+
+.middle .create-post
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .create-post input[type="text"]
+{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
+}
+
+/*===================FEED SECTION STYLING===============*/
+
+.middle .feeds .feed
+{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.middle .feeds .feed .head
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle .feed .user
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.middle .feed .photo
+{
+border-radius: var(--card-border-radius);
+overflow: hidden;
+margin: 0.7rem 0;
+height: 30rem;
+width: 35rem;
+}
+
+.middle .feed .action-button
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 0.6rem;
+}
+
+.middle .liked-by
+{
+    display: flex;
+}
+
+.middle .liked-by span
+{
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid black;
+    margin: -0.2rem;
+}
+
+/* .middle .liked-by span:first-child
+{
+
+} */
+
+.middle .liked-by p
+{
+    margin-left: 0.8rem;
+}
