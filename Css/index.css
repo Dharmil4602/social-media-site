@@ -3,15 +3,22 @@
 :root
 {
     /* hsl stands for hue, saturation and lightness */
-    --color-dark: hsl(252, 30%, 17%);
-    --color-light: hsl(252, 30%, 95%);
+    --primary-color-hue: 252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+    --color-light: hsl(252, 30%, var(--light-color-lightness));
     --color-grey: hsl(252, 15%, 65%);
-    --color-primary: hsl(252, 75%, 60%);
-    --color-secondary: hsl(252, 100%, 90%);
-    --color-success: hsl(120, 95%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-secondary: hsl(var(--primary-color-hue), 100%, 90%);
+    /* --color-secondary: hsl(252, 100%, 90%); */
+    --color-success: hsl(286, 96%, 51%);
+    /* --color-success: hsl(120, 95%, 65%); */
     --color-danger: hsl(0, 95%, 65%);
     --color-black: hsl(252, 30%, 10%);
-    --color-white: hsl(252, 30%, 100%);
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -101,7 +108,8 @@ font-size: 0.9rem;
 nav
 {
     width: 100%;
-    background: white;
+    /* background: white; */
+    background: var(--color-white);
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
@@ -628,7 +636,7 @@ main .container .right
 
 .customize-theme
 {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(236 232 232 / 61%);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -648,6 +656,7 @@ main .container .right
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 /* FONT SIZES */
@@ -705,6 +714,7 @@ main .container .right
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .customize-theme .choose-color span
@@ -731,7 +741,8 @@ background: hsl(0, 95%, 65%);
 
 .customize-theme .choose-color span:nth-child(4)
 {
-background: hsl(120, 95%, 65%);
+background: hsl(286, 96%, 51%);
+/* background: hsl(120, 95%, 65%); */
 }
 
 .customize-theme .choose-color span:nth-child(5)

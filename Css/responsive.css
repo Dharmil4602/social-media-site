@@ -54,6 +54,11 @@
             top: 0.2rem;
             right: 1rem;
     }
+
+    .customize-theme .card
+    {
+        width: 80vw;
+    }
 }
 
 /* FOR MOBILES */
@@ -119,4 +124,45 @@ main .container .right
 {
     display: none;
 }
+
+.customize-theme .card
+    {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .customize-theme .card
+    {
+        width: 80vw;
+        padding: 1.2rem;
+    }
+
+    .customize-theme .card .font-size
+    {
+        margin-top: 1rem;
+    }
+
+    .customize-theme .card .color
+    {
+        margin-top: 1rem;
+    }
+
+    .customize-theme .card .background
+    {
+        margin-top: 1rem;
+    }
+
+    .customize-theme .choose-bg > div
+    {
+        padding: 0.3rem;
+        width: 29%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    }
+
 }
